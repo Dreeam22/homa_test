@@ -6,7 +6,7 @@ using System.IO;
 
 public class FBX_Import_Tool : MonoBehaviour
 {
-    [MenuItem("Assets/Create/Import Tool/Create Prefab from FBX")]
+    [MenuItem("Tools/Create Prefab from selected FBX")]
     public static void CreatePrefabFromFBX(){
         GameObject[] objectArray = Selection.gameObjects;
     
