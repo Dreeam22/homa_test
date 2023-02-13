@@ -6,7 +6,7 @@ using System.IO;
 
 public class Icon_ImportTool : AssetPostprocessor
 {
-     void OnPostprocessTexture(Texture2D texture)
+     void OnPreprocessTexture()
     {
          TextureImporter importer = assetImporter as TextureImporter;
      
@@ -17,6 +17,7 @@ public class Icon_ImportTool : AssetPostprocessor
                 "Yes", "No"))
                 {
                     importer.textureType = TextureImporterType.Sprite;
+                    importer.SaveAndReimport();
                 }               
             }
         else
